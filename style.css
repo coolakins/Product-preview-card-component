@@ -1,0 +1,124 @@
+* {
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.total-card {
+  min-width: 400px;
+  width: 70%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+.card-img img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.main-content {
+  padding: 25px;
+}
+.card-name {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+}
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 35px;
+}
+p {
+  color: hsl(228, 12%, 48%);
+}
+.card-price {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.card-price-new {
+  color: hsl(144, 25%, 45%);
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  margin-right: 40px;
+}
+.card-price s {
+  color: hsl(228, 12%, 48%);
+}
+.card-sub img {
+  margin-right: 20px;
+  width: 20px;
+}
+.card-submit {
+  width: 100%;
+  padding: 20px;
+  margin: 5px;
+  background-color: hsl(144, 25%, 45%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (width <= 767px) {
+  .desktop-img {
+    display: none; /* Hide desktop image on mobile */
+  }
+}
+@media (width > 767px) {
+  .mobile-img {
+    display: none; /* Hide mobile image on desktop */
+  }
+  .total-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100vh;
+    max-height: 100%;
+    margin-bottom: 10px;
+  }
+  .card-img img {
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 20px 0 0 20px;
+  }
+  /* .main-content{
+        padding: 50px;
+    } */
+  .card-name {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .card-price-new {
+    font-size: 45px;
+  }
+  .card-submit {
+    font-size: 25px;
+  }
+}
